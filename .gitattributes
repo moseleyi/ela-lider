@@ -1,0 +1,7 @@
+_images_content/blog filter=lfs diff=lfs merge=lfs -text
+_images_content/gallery filter=lfs diff=lfs merge=lfs -text
+_images_content/news filter=lfs diff=lfs merge=lfs -text
+_images_content/offers filter=lfs diff=lfs merge=lfs -text
+_images_content/products filter=lfs diff=lfs merge=lfs -text
+_images_content/promobox filter=lfs diff=lfs merge=lfs -text
+_images_content/slideshow filter=lfs diff=lfs merge=lfs -text
