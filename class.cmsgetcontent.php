@@ -905,7 +905,7 @@ class cmsGetContent extends cmsControl{
 
 			$this->executeQuery("SELECT * FROM cms_news WHERE lang='$this->lang' AND status='1' ORDER BY date DESC",1);
 			while($row = mysqli_fetch_assoc($this->result1)) {
-				$this->pageContent .= '<a href="'.$this->buildLink($row, "news").'" class="news-link colour-grey-dark'.($this->id == $row["id"] ? ' active' : '').'"><span class="news-link-date colour-red font-abold">'.$this->convertDate($row["date"], false, $this->lang).'</span> - '.$row["title"].'</a>';
+				$this->pageContent .= '<a href="'.$this->buildLink($row, "news").'" class="news-link colour-grey-dark'.($this->id == $row["id"] ? ' active' : '').'"><span class="news-link-date colour-red font-abold">'.$this->convertDate($row["date"], false, $this->lang).'</span><span class="news-link-title">'.$row["title"].'</span></a>';
 			}
 
         $this->pageContent .= '</div><div class="c"></div>';

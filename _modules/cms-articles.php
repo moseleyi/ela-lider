@@ -361,10 +361,10 @@
 							<ul id="image-sorting">';
 								$cms->executeQuery("SELECT * FROM cms_articles_files WHERE news_id='$cms->id' ORDER BY position ASC",1);
 								while($row = mysqli_fetch_assoc($cms->result1)) {
-									list($w,$h) = getimagesize("_images_content/news/_cropped/".$row["file"]);
+									list($w,$h) = getimagesize("_images_content/articles/_cropped/".$row["file"]);
 									echo '<li id="'.$row["id"].'" class="image-wrap">
 											<div class="image-container imageCont">
-												'.$cms->centerImage('_images_content/news/_lemon/'.$row["file"],143,100).'
+												'.$cms->centerImage('_images_content/articles/_lemon/'.$row["file"],143,100).'
 											</div>
 											<div class="imageTools">
 												<a href="#edit" class="editGalPicture edit-image-details link_edit plink" name="'.$row["id"].'" title="'.$cms->translate(376).'">&nbsp;</a>

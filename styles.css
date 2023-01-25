@@ -45,9 +45,10 @@ html, body{padding:0;margin:0;width:100%;height:auto;font-family:"AlegreyaRegula
 
         .news-link{display:block;margin-bottom:20px;}
             .news-link-date{background-color:white;padding:3px 5px;display:inline-block;}
-                .news-link:hover, .news-link.active{background-color:#c4b9b8;}
+                .news-link:hover .news-link-title, .news-link.active .news-link-title{background-color:#ac1204;color:white;}
+            .news-link-title {display:block;background:#e4e2dc;padding:5px;}
 
-        .page-link{display:block;padding:5px;margin-bottom:10px;background-color:#c4b9b9;}
+        .page-link{display:block;padding:5px;margin-bottom:10px;background-color:#e4e2dc;}
             .page-link.active, .page-link:hover{background-color:#ac1204;color:white;}
             .page-link.lvl2{margin-left:20px;}
 

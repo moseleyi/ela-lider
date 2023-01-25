@@ -19,6 +19,9 @@
     <link rel="canonical" href="<?php echo $cms->cw.$_SERVER["REQUEST_URI"];?>" />
     <link rel="stylesheet" type="text/css" href="/styles.css?t=<?php echo rand(0,999999); ?>" />
     <link rel="stylesheet" type="text/css" href="/styles_ck.css" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="noodp" />
+    <meta property="og:type" content="website"/>
     <meta property="og:title" content="<?php echo $cms->metaTitle; ?>">
     <meta property="og:description" content="<?php echo $cms->metaDesc; ?>">
     <meta property="og:image" content="https://elalider.pl/_images/logo.png">
