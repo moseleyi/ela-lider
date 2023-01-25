@@ -447,7 +447,7 @@ class cmsControl  {
         $type = $this->link_types;
 
         /* first always add the beginning of the link to the array */
-        $l = "/".($type == "get" ? "cms.php?l=".$this->lang : $type.'/'.(empty($ln) ? $this->lang : $ln)).(count($t) > 0 ? ($type == "get" ? '&' : '/') : '');
+        $l = "/".($type == "get" ? "cms.php?l=".$this->lang : $type.(!empty($ln) || !empty($this->lang) ? '/'.(empty($ln) ? $this->lang : $ln) : '')).(strlen($t) > 0 ? ($type == "get" ? '&' : '/') : '');
 
 
         if(!empty($t)) {
@@ -542,7 +542,6 @@ class cmsControl  {
  *		@param $a  (string) - current action  (optional)
  */
 	public function saveAction($c1,$c2="",$t="",$a="") {
-		$timestamp = mktime();
 		$ip = $_SERVER["REMOTE_ADDR"];
 		if(isset($_SESSION["userLogin"])) {
 			$login = $_SESSION["userLogin"];
@@ -795,7 +794,7 @@ class cmsControl  {
 		list($w,$h) = getimagesize($i);
 		$mx = ($x - $w) / 2;
 		$my = ($y - $h) / 2;
-		return '<img src="/'.$i.'" style="margin-top:'.$my.'px;margin-left:'.$mx.'px;" alt="'.$a.'" height="'.$h.'" width="'.$w.'" />';
+		return '<img src="/'.$i.'" style="margin-top:'.$my.'px;margin-left:'.$mx.'px;" alt="'.$a.'" title="'.$a.'" height="'.$h.'" width="'.$w.'" />';
 	}
 
 

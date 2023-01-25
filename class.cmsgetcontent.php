@@ -384,6 +384,7 @@ class cmsGetContent extends cmsControl{
 		else{
 			switch($m) {
 				case "news":
+                case "articles":
 				case "offers":
 				case "blog":
 					$l .= $this->getModuleLink($m,true).'/'.($this->urls == "full" ? $row["id"].',' : '').$row["intName"];
@@ -486,6 +487,14 @@ class cmsGetContent extends cmsControl{
 				}
 			}
 		}
+        if(empty($this->id)) {
+            $this->executeQuery("SELEcT * FROM cms_menu WHERE connection_type='exception' AND connection = 2", 11);
+            $r11 = mysqli_fetch_assoc($this->result11);
+            $url = $this->buildLink($r11, "menu");
+            http_response_code(404);
+            $this->id = $r11["id"];
+            $this->pf = $r11["intName"];
+        }
 
 		// Get all details
 		$this->executeQuery("
@@ -506,6 +515,7 @@ class cmsGetContent extends cmsControl{
 		$this->slide_id = $row["slideId"];
 		$this->gallery_id = $row["galleryId"];
 		$this->curLevel = $row["level"];
+
 
 		// Set current level page details
 		$this->page[$this->curLevel] = array(
@@ -602,6 +612,10 @@ class cmsGetContent extends cmsControl{
 
 			// Execute right method depending on what connection the page has
 			switch($row["shortName"]) {
+                case "articles":
+                    $this->getArticles();
+                    $this->object_type = "article";
+                break;
 				case "news":
 					$this->getNews();
 					$this->object_type = "news";
@@ -661,9 +675,9 @@ class cmsGetContent extends cmsControl{
 
             if($k > 0 && $row["content"] == "") {
 
-                $this->executeQuery("SELECT * FROM cms_menu WHERE parentId='{$this->page[0]["id"]}' AND status='1' AND content<>'' ORDER BY position ASC LIMIT 0,1",3);
-                $r3 = mysqli_fetch_assoc($this->result3);
-                header("Location:".$this->buildLink($r3, "menu"));
+                // $this->executeQuery("SELECT * FROM cms_menu WHERE parentId='{$this->page[0]["id"]}' AND status='1' AND content<>'' ORDER BY position ASC LIMIT 0,1",3);
+                // $r3 = mysqli_fetch_assoc($this->result3);
+                // header("Location:".$this->buildLink($r3, "menu"));
             }
 		$this->pageContent = '<h1 class="colour-red size-30 font-abold">'.$this->pageTitle.'</h1>';
 
@@ -676,7 +690,7 @@ class cmsGetContent extends cmsControl{
 			$this->executeQuery("SELECT * FROM cms_gallery_files WHERE galleryId = '27' ORDER BY position ASC",1);
 			while($row = mysqli_fetch_assoc($this->result1)) {
 				$this->pageContent .= '<a href="'.($row["link"] != "" ? $row["link"] : '/_images_content/gallery/'.$lw.'x'.$lh.'/'.$row["file"]).'" class="gallery-link'.($row["link"] != "" ? ' no-colorbox' : '').'" title="'.$row["alt"].'" class="gallery-image-link lightbox">
-				<span class="display-block gallery-image"><img data-src="/_images_content/gallery/'.$tw.'x'.$th.'/'.$row["file"].'" alt="'.$row["alt"].'" /></span>
+				<span class="display-block gallery-image"><img data-src="/_images_content/gallery/'.$tw.'x'.$th.'/'.$row["file"].'" alt="'.$row["alt"].'" title="'.$row["alt"].'" /></span>
 				<span class="display-block align-center colour-red size-18">'.$row["description"].'</span></a>';
 			}
 		}
@@ -897,6 +911,51 @@ class cmsGetContent extends cmsControl{
         $this->pageContent .= '</div><div class="c"></div>';
 	}
 
+	private function getArticles() {
+		// Get one particular piece of news<div class="right">';
+
+        $this->pageContent = '<div class="right">';
+
+		if(empty($this->elementTitle)) {
+            $this->executeQuery("SELECT * FROM cms_articles WHERE status='1' ORDER BY date DESC LIMIT 0,1",1);
+            $r = mysqli_fetch_assoc($this->result1);
+            header("Location:".$this->buildLink($r, "articles"));
+        }
+
+        $this->executeQuery("SELECT * FROM cms_articles WHERE id='$this->id'",1);
+        $row = mysqli_fetch_assoc($this->result1);
+        $this->getMeta($row);
+        $this->pageTitle = $row["title"];
+        $this->pageContent .= '<div>
+            <h1 class="size-30 font-abold colour-red">'.$this->pageTitle.'</h1>
+            <div class="align-justify">
+                '.$this->replaceKcFinderPaths($row["content"]);
+
+                if($this->getCount("cms_articles_files", "WHERE news_id='$this->id'") > 0) {
+                    $this->pageContent .= '<div id="gallery">';
+
+                    $this->executeQuery("SELECT * FROM cms_articles_files WHERE news_id='$this->id' ORDER BY position ASC",4);
+                    while($r4 = mysqli_fetch_assoc($this->result4)) {
+                        $this->pageContent .= '<a href="'.($r4["link"] != "" ? $r4["link"] : '/_images_content/articles/1000x700/'.$r4["file"]).'" class="gallery-link'.($r4["link"] != "" ? ' no-colorbox' : '').'" title="'.$r4["alt"].'" class="gallery-image-link lightbox">
+						<span class="display-block gallery-image"><img data-src="/_images_content/articles/400x300/'.$r4["file"].'" alt="'.$r4["alt"].'" /></span>
+						<span class="display-block align-center colour-red size-18">'.$r4["description"].'</span></a>';
+                    }
+
+                    $this->pageContent .= '</div>';
+                }
+        $this->pageContent .= '
+            </div>
+        </div>';
+
+        $this->pageContent .= '</div><div class="left">';
+
+			$this->executeQuery("SELECT * FROM cms_articles WHERE lang='$this->lang' AND status='1' ORDER BY date DESC",1);
+			while($row = mysqli_fetch_assoc($this->result1)) {
+				$this->pageContent .= '<a href="'.$this->buildLink($row, "articles").'" class="news-link colour-grey-dark'.($this->id == $row["id"] ? ' active' : '').'"><span class="news-link-date colour-red font-abold">'.$this->convertDate($row["date"], false, $this->lang).'</span> - '.$row["title"].'</a>';
+			}
+
+        $this->pageContent .= '</div><div class="c"></div>';
+	}
 
 /**
  *	getGallery - retrieves gallery information
@@ -1097,7 +1156,7 @@ class cmsGetContent extends cmsControl{
 		while($row = mysqli_fetch_assoc($this->result1)) {
 
 			$start = $row["link"] != "" ? '<a href="'.$row["link"].'" target="_blank" class="slide type-link">' : '<div class="slide type-alt">';
-			$image = $res == false ? $this->centerImage('_images_content/slideshow/'.$w.'x'.$h.'/'.$row["file"], $w, $h, $row["alt"]) : '<img src="/_images_content/slideshow/'.$w.'x'.$h.'/'.$row["file"].'" alt="'.$row["alt"].'" width="" height="" />';
+			$image = $res == false ? $this->centerImage('_images_content/slideshow/'.$w.'x'.$h.'/'.$row["file"], $w, $h, $row["alt"]) : '<img src="/_images_content/slideshow/'.$w.'x'.$h.'/'.$row["file"].'" alt="'.$row["alt"].'" width="" height="" title="'.$row["alt"].'" />';
 			$desc = $row["description"] != "" ? '<div class="slide-text">'.$row["description"].'</div>' : '';
 			$end = $row["link"] != "" ? '</a>' : '</div>';
 
@@ -1174,5 +1233,13 @@ class cmsGetContent extends cmsControl{
 	public function translate($n) {
 		return htmlspecialchars($this->t[$this->lang][$n]);
 	}
+
+    public static function obfuscate_string($e):string {
+        $t = '';
+        foreach(str_split($e, 1) as $c) {
+            $t .= '&#' . ord($c) . ';';
+        }
+        return $t;
+    }
 }
 ?>

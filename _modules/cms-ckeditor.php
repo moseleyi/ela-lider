@@ -252,6 +252,7 @@
 										<option value="h2"'.($element == "h2" ? ' selected="selected"' : '').'>H2</option>
 										<option value="h3"'.($element == "h3" ? ' selected="selected"' : '').'>H3</option>
 										<option value="h4"'.($element == "h4" ? ' selected="selected"' : '').'>H4</option>
+										<option value="h5"'.($element == "h5" ? ' selected="selected"' : '').'>H5</option>
 									</select>
 								</div>
 								<div class="itemType vital" title="'.$cms->translate(241).'">!</div>

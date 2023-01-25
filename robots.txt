@@ -7,3 +7,5 @@ Disallow: /_modules/
 Disallow: /_scripts/
 Disallow: /_sql/
 Disallow: /_captcha
+
+Sitemap: https://elalider.pl/sitemap.xml
