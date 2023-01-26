@@ -5,7 +5,7 @@
 
     define("HOME", $cms->object_type == "page" && $cms->id == $cms->{"pfDef_".$cms->lang});
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php echo $cms->lang; ?>">
 <head>
     <meta http-equiv="Content-Style-Type" content="text/css" />
@@ -45,7 +45,8 @@
     <div id="wrap-top">
         <div class="content">
             <a href="/" id="logo" title="Ośrodek Profilaktyki i Edukacji LIDER" class="display-iblock va-middle">
-                <img src="/_images/logo.png" width="146" height="122" alt="Ośrodek Profilaktyki i Edukacji LIDER" title="Ośrodek Profilaktyki i Edukacji LIDER" />
+                <img src="/_images/logo.webp" width="146" height="122" alt="Ośrodek Profilaktyki i Edukacji LIDER" title="Ośrodek Profilaktyki i Edukacji LIDER" />
+            </a>
             </a>
             <span id="text" class="align-right display-iblock va-middle">
                 <span class="colour-grey size-20 font-fjord display-iblock va-middle">
@@ -54,7 +55,7 @@
                     &#8222;LIDER&#8221;
                 </span>
             </span>
-            <img src="/_images/quote.png" width="586" height="94" alt="Myśl. Wierz. Marz. Miej odwagę. - Walt Disney" title="Myśl. Wierz. Marz. Miej odwagę. - Walt Disney" id="quote" />
+            <img src="/_images/quote.webp" width="586" height="94" alt="Myśl. Wierz. Marz. Miej odwagę. - Walt Disney" title="Myśl. Wierz. Marz. Miej odwagę. - Walt Disney" id="quote" />
         </div>
     </div>
 
@@ -71,11 +72,11 @@
             <?php echo $cms->createNavigation("menu", 0, array(0)); ?>
             <div id="contact">
                 <a href="<?=$cms->obfuscate_string("tel:+48509534733")?>" class="colour-grey-dark size-24">
-                    <img src="/_images/phone.png" alt="Zadzwoń!" width="" height="" />
+                    <img src="/_images/phone.webp" alt="Zadzwoń!" width="" height="" />
                     <?=$cms->obfuscate_string("509 534 733")?>
                 </a>
                 <a href="<?=$cms->obfuscate_string("mailto:elalider@interia.pl")?>" class="colour-grey-dark size-24">
-                    <img src="/_images/mail.png" alt="Napisz do nas!" width="" height="" />
+                    <img src="/_images/mail.webp" alt="Napisz do nas!" width="" height="" />
                     <?=$cms->obfuscate_string("elalider@interia.pl")?>
                 </a>
             </div>
@@ -110,7 +111,7 @@
                 while($r = mysqli_fetch_assoc($cms->result1)) {
                     echo '<div class="icon">
                             <a href="'.$cms->buildLink($r, "menu").'" title="'.$r["extName"].'">
-                                <img src="/_images/icon'.$i.'.png" alt="'.$r["extName"].'" title="'.$r["extName"].'" />
+                                <img src="/_images/icon'.$i.'.webp" alt="'.$r["extName"].'" title="'.$r["extName"].'" width="100" height="100" />
                             </a>
                             <h3>
                                 <a href="'.$cms->buildLink($r, "menu").'" title="'.$r["extName"].'" class="colour-grey-dark align-center">
@@ -167,16 +168,17 @@
             <div class="size-24">ul. Radna 54<br />14-300 Morąg</div><br />
             <div>
                 <a href="<?=$cms->obfuscate_string("tel:+48509534733")?>" class="colour-grey-dark size-32">
-                    <img src="/_images/phone.png" alt="Zadzwoń!" width="" height="" />
+                    <img src="/_images/phone.webp" alt="Zadzwoń!" width="40" height="40" />
                     <?=$cms->obfuscate_string("509 534 733")?>
                 </a>
                 <a href="<?=$cms->obfuscate_string("mailto:elalider@interia.pl")?>" class="colour-grey-dark size-32">
-                    <img src="/_images/mail.png" alt="Napisz do nas!" width="" height="" />
+                    <img src="/_images/mail.webp" alt="Napisz do nas!" width="40" height="40" />
                     <?=$cms->obfuscate_string("elalider@interia.pl")?>
                 </a>
             </div>
         </div>
     </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <?php echo $cms->scripts; ?>
     <?php if($cms->scripts_foot != "") {echo '<script type="text/javascript">'.$cms->scripts_foot.'</script>';}?>
     <?php
