@@ -684,6 +684,7 @@ class cmsGetContent extends cmsControl{
         if($k > 0) {
             $this->pageContent .= '<div class="right">';
         }
+        $this->pageContent .= '<div id="page-body">';
         $this->pageContent .= '<div class="align-justify">'.$this->replaceKcFinderPaths($row["content"]).'&nbsp;</div>';
 		if($row["id"] == 27) {
 			$lw = 400; $lh = 300; $tw = 1000; $th = 700;
@@ -694,7 +695,7 @@ class cmsGetContent extends cmsControl{
 				<span class="display-block align-center colour-red size-18">'.$row["description"].'</span></a>';
 			}
 		}
-
+        $this->pageContent .= '</div>';
         if($k > 0) {
             $this->pageContent .= '</div><div class="left">';
 

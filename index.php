@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" id="page-content">
             <?php echo $cms->pageContent; ?>
             <div class="c"></div>
         </div>
@@ -93,11 +93,13 @@
     ?>
     <div id="wrap-text" class="bg-red">
         <div class="content colour-white align-center">
-            <?php
-                $cms->executeQuery("SELECT * FROM cms_menu WHERE id = 24", 1);
-                $r = mysqli_fetch_assoc($cms->result1);
-                echo $cms->replaceKcFinderPaths($r["content"]);
-            ?>
+            <div id="page-body">
+                <?php
+                    $cms->executeQuery("SELECT * FROM cms_menu WHERE id = 24", 1);
+                    $r = mysqli_fetch_assoc($cms->result1);
+                    echo $cms->replaceKcFinderPaths($r["content"]);
+                ?>
+            </div>
         </div>
     </div>
     <?php } ?>

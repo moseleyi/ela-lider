@@ -25,6 +25,12 @@ html, body{padding:0;margin:0;width:100%;height:auto;font-family:"AlegreyaRegula
         #wrap-content .right a{color:#ac1204;}
         #wrap-content .right img[src*="/images/"] {max-width:100%;height:auto !important;}
 
+    #contents-table {padding-bottom:2vw;margin-bottom:2vw;border-bottom:1px solid #4c4c58;}
+        #contents-table-title {font-size:20px;font-weight:bold;}
+            #ct-items {}
+                #ct-items .ct-item {cursor:pointer;}
+                    #ct-items .ct-item:hover {color:#ac1204;}
+
     #wrap-icons{}
         #wrap-icons .icon{width:calc(84% / 8);padding:0px 1%;display:inline-block;vertical-align: top;text-align: center;}
         #wrap-icons .icon img{margin-bottom:10px;}
