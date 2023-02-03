@@ -31,6 +31,12 @@ RewriteRule ^files/(.*)$ /\_scripts/cms/kcfinder/upload/files/$1 [L]
 RewriteCond %{THE_REQUEST} ^GET\ /index\.(php|html)\ HTTP
 RewriteRule (.*)index\.(php|html)$ /$1 [R=301,L]
 
+# 301 Redirections from old site
+RewriteRule ^html/kontakt.html$ https://elalider.pl/kontakt [R=301,L]
+RewriteRule ^html/onas.html$ https://elalider.pl/onas [R=301,L]
+RewriteRule ^html/(zasoby|impressum).html$ https://elalider.pl [R=301,L]
+RewriteRule ^home$ https://elalider.pl [R=301,L]
+
 ###############################
 ### Leverage Cache Browsing ###
 ###############################

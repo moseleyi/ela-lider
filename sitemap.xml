@@ -8,203 +8,223 @@
 
 
 <url>
-  <loc>http://www.elalider.pl/</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/home</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/osrodek-lider</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/o-nas</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/zasoby</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/galeria</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/galeria</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/do-pobrania</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/kontakt</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/kontakt</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/artykuly/spojrz_inaczej_program</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/dzieci-przedszkolne</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/szkolenia-realizatorow-rekomendowanych-programow-profilaktycznych</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/uczniowie-szkol-podstawowych</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/dzieci-przedszkolne</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/profilaktyka-alkoholowa</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/uczniowie-szkol-podstawowych</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/profilaktyka-narkotykowa</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/profilaktyka-alkoholowa</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/profilaktyka-innych-zachowan-ryzykownych</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/profilaktyka-narkotykowa</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/uczniowie-szkol-srednich</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/profilaktyka-innych-zachowan-ryzykownych</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/profilaktyka-alkoholowa-szkoly-srednie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/uczniowie-szkol-srednich</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/profilaktyka-narkotykowa-szkoly-srednie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/profilaktyka-alkoholowa-szkoly-srednie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/profilaktyka-innych-zachowan-ryzykownych-szkoly-srednie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/profilaktyka-narkotykowa-szkoly-srednie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/rodzice</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/profilaktyka-innych-zachowan-ryzykownych-szkoly-srednie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/nauczyciele</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/rodzice</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/szkolenia-realizatorow-rekomendowanych-programow-profilaktycznych</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/nauczyciele</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/szkolenia-realizatorow-programow-profilaktycznych</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/szkolenia-realizatorow-programow-profilaktycznych</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/szkolenia-podnoszace-umiejetnosci</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/szkolenia-podnoszace-umiejetnosci</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/przyjaciele-zippiego-wolne-miejsca-w-rynsku</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/sprzedawcy-napojow-alkoholowych</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/sprzedawcy-napojow-alkoholowych</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/miejskiegminne-komisje-rozwiazywania-problemow-alkoholowych</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/miejskiegminne-komisje-rozwiazywania-problemow-alkoholowych</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/inne-przedsiewziecia</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/inne-przedsiewziecia</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/szkolenie-przygotowujace-do-programu-cukierki</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-barczewie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/przyjaciele-zippiego-wolne-miejsca-w-rynsku</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/spojrz-inaczej-w-radomiu</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-barczewie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/referencje</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/o-nas</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/spojrz-inaczej-4-8-w-stebarku</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/referencje</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/przyjaciele-zippiego-w-moragu</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-1-3-w-radomiu</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-ostrodzie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-4-8-w-radomiu</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/spojrz-inaczej-w-moragu</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-4-8-w-rogolinie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/nowosc-program-profilaktyczny-apteczka-kierunek-optymizm-dla-klas-7-8-dokladna-data-i-miejsc-w-trakcie-uzgodnien</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-4-8-w-stebarku</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/program-domowych-detektywow-w-moragu</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/przyjaciele-zippiego-w-moragu</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-lidzbarku-warminskim</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-ostrodzie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/-ostatnie-2-wolne-miejsca-spojrz-inaczej-w-opolu</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-w-moragu</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/spojrz-inaczej-w-ostrodzie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/nowosc-program-profilaktyczny-apteczka-kierunek-optymizm-dla-klas-7-8-dokladna-data-i-miejsc-w-trakcie-uzgodnien</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/spojrz-inaczej-w-pucku</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/program-domowych-detektywow-w-moragu</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/fantastyczne-mozliwosci-w-plocku</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-lidzbarku-warminskim</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/mosty-za-gdynia-ostatnie-wolne-miejsca-szkolenie-apteczka-pierwszej-pomocy-emocjonalnej</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/ostatnie-2-wolne-miejsca-spojrz-inaczej-w-opolu</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-koscierzynie</loc>
-  <lastmod>2023-01-24T17:48:42+00:00</lastmod>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-w-ostrodzie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://elalider.pl/aktualnosci/spojrz-inaczej-w-pucku</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://elalider.pl/aktualnosci/fantastyczne-mozliwosci-w-plocku</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://elalider.pl/aktualnosci/mosty-za-gdynia-ostatnie-wolne-miejsca-szkolenie-apteczka-pierwszej-pomocy-emocjonalnej</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://elalider.pl/aktualnosci/apteczka-pierwszej-pomocy-emocjonalnej-w-koscierzynie</loc>
+  <lastmod>2023-02-03T08:14:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
