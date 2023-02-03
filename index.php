@@ -131,7 +131,7 @@
         <div class="content">
             <h2 class="size-32 colour-grey font-abold">Aktualności</h2><br />
             <?php
-                $cms->executeQuery("SELECT *,DAY(date) AS 'd', LPAD(MONTH(date), 2, 0) AS 'm' FROM cms_news WHERE status='1' ORDER BY date DESC LIMIT 0,3",1);
+                $cms->executeQuery("SELECT *,DAY(date) AS 'd', LPAD(MONTH(date), 2, 0) AS 'm' FROM cms_news WHERE status='1' ORDER BY date DESC LIMIT 0,6",1);
                 while($r = mysqli_fetch_assoc($cms->result1)) {
                     $c = $cms->trimString(strip_tags($r["content"]), 300);
 
